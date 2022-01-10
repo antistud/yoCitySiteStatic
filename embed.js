@@ -330,7 +330,7 @@ function formatTime(d) {
         padding:5px 140px 5px 20px;
         text-align:left;
         width:40%;
-        min-width:200px;
+        min-width:300px;
 
       }
       .yc_item_description{
@@ -350,7 +350,7 @@ function formatTime(d) {
       }
       .yc_item_icons{
         width:59%;
-        min-width:200px;
+        min-width:340px;
         display:inline-block;
         text-align:right;
         padding:5px 20px 5px 20px;
@@ -360,7 +360,7 @@ function formatTime(d) {
         text-align:center;
         display:inline-block;
         padding:10px;
-        margin-left:30px;
+        margin-left:0px;
       }
       .yc_item_icon_box a{
         text-decoration: none;
