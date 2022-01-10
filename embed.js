@@ -138,11 +138,7 @@ function formatTime(d) {
       </style>
   
       <div class="yc_list" >
-                    <div class="yc_list_title">
-                    <h3>
-                      `+ listData.name +`
-                    </h3>
-                    </div>
+               
                     `;
   
       for(let i of listData.linkedEvents){
