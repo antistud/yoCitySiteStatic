@@ -1,11 +1,18 @@
-window.addEventListener("load",async function yc_run(){
+window.addEventListener("load",async function load(){
+  yc_run()
+}, false);
 
-  //alert("it works")
-    
+
+
+  async function yc_run(){
+
+  console.log("yoCity is ready!!!");
+
   const app = window.yc_app;
   const today = new Date()
   const host = "https://"+app+".yo.city/"
 
+  console.log("yoCity is ready!!! - " + host);
 
   function formatDate(date) {
     var d = new Date(date),
@@ -36,9 +43,12 @@ function formatTime(d) {
 
    // Yo City LIST
 
-    let listDiv = document.getElementById("yc_list");
+    let listDiv = window.document.getElementById("yc_list");
+
+    console.log(listDiv);
 
     if(listDiv){
+      console.log("yoCity Card List Found");
       let listID = listDiv.getAttribute("list");
       let itemLink = listDiv.getAttribute("item-link");
       let imageSize = listDiv.getAttribute("image-size");
@@ -504,4 +514,4 @@ function formatTime(d) {
     }
 
 
-}, false);
+  }
