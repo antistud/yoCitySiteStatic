@@ -91,22 +91,6 @@ function formatTime(d) {
         width:100%;
         height:100%;
       }
-      `; 
-      if(imageSize == "contain"){
-        content += `
-      .yc_card_image{
-        width:100%; 
-        height:100%; 
-        background-size:contain;
-        background-position:center;
-        background-repeat: no-repeat;
-        -webkit-box-shadow: inset 0px -120px 33px -30px #000000; 
-        box-shadow: inset 0px -120px 33px -30px #000000;
-        position: relative;
-      }
-      `;
-    }else{
-      content += `
       .yc_card_image{
         width:100%; 
         height:100%; 
@@ -117,10 +101,6 @@ function formatTime(d) {
         box-shadow: inset 0px -120px 33px -30px #000000;
         position: relative;
       }
-      `;
-    }
-  
-    content +=`
     .yc_card_title_box{
         color:white;
         position: absolute;
@@ -254,12 +234,18 @@ function formatTime(d) {
     
     //let itemID = listDiv.getAttribute("list");
     if(itemDiv){
-      let itemIdString = itemDiv.getAttribute("item-id");
+      
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      let itemIdString = urlParams.get('yc-item')
+
       let itemId = itemIdString.split("-");
       let type = itemId[0];
       let id = itemId[1];
       let dateId = itemId[2];
       let itemData;
+
+
 
       if(type){
         await fetch(host+type+"/"+id)
@@ -355,8 +341,12 @@ function formatTime(d) {
         text-align:right;
         padding:5px 20px 5px 20px;
       }
+      @media screen and (max-width: 992px) {
+        .column {
+          width: 50%;
+        }
+      } 
       .yc_item_icon_box{
-        
         text-align:center;
         display:inline-block;
         padding:10px;
