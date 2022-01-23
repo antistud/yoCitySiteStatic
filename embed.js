@@ -6,13 +6,13 @@ window.addEventListener("load",async function load(){
 
   async function yc_run(){
 
-  console.log("yoCity is ready!!!");
+  // console.log("yoCity is ready!!!");
 
   const app = window.yc_app;
   const today = new Date()
   const host = "https://"+app+".yo.city/"
 
-  console.log("yoCity is ready!!! - " + host);
+  // console.log("yoCity is ready!!! - " + host);
 
   function formatDate(date) {
     var d = new Date(date),
@@ -45,10 +45,10 @@ function formatTime(d) {
 
     let listDiv = window.document.getElementById("yc_list");
 
-    console.log(listDiv);
+    // console.log(listDiv);
 
     if(listDiv){
-      console.log("yoCity Card List Found");
+      // console.log("yoCity Card List Found");
       let listID = listDiv.getAttribute("list");
       let itemLink = listDiv.getAttribute("item-link");
       let imageSize = listDiv.getAttribute("image-size");
@@ -79,7 +79,7 @@ function formatTime(d) {
       }
       .yc_card{
         width:325px;
-        height:325px; 
+        height:260px; 
         background-color:#ccc; 
         border-radius:8px; 
         overflow:hidden;
@@ -280,7 +280,7 @@ function formatTime(d) {
       .yc_item_box{
         margin: auto;
         width: 100%;
-        max-width:800px;
+        max-width:1000px;
         text-align:center;
       }
       .yc_item_image{
@@ -295,7 +295,7 @@ function formatTime(d) {
         padding:10px 30px 15px 30px;
       }
       .yc_item_dates{
-        padding:20px 20px 20px 24px;
+        padding:20px 0px 20px 4px;
         width:100%;
       }
       .yc_item_date_box{
@@ -313,14 +313,14 @@ function formatTime(d) {
       }
       .yc_item_address{
         display:inline-block;
-        padding:5px 140px 5px 20px;
+        padding:5px 10px 5px 0px;
         text-align:left;
         width:40%;
         min-width:300px;
 
       }
       .yc_item_description{
-        padding:5px 20px 20px 20px;
+        padding:5px 0px 20px 0px;
         text-align:left;
       }
       .yc_item_description hr {
