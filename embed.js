@@ -129,11 +129,11 @@ function formatTime(d) {
   
         let heroImage = i.heroImage.url
         
-        if(i.heroImage.formats.thumbnail){
+        if(i.heroImage && i.heroImage.formats && i.heroImage.formats.thumbnail){
           heroImage = i.heroImage.formats.thumbnail.url;
         }
   
-        if(i.heroImage.formats.small){
+        if(i.heroImage && i.heroImage.formats && i.heroImage.formats.small){
           heroImage = i.heroImage.formats.small.url;
         }
   
@@ -172,6 +172,7 @@ function formatTime(d) {
       }
 
       for(let i of listData.linkedPlaces){
+      
         let itemType = "places";
   
         let link = itemLink.replace("[item-id]", itemType + '-' + i.id) 
@@ -179,11 +180,11 @@ function formatTime(d) {
   
         let heroImage = i.heroImage.url
         
-        if(i.heroImage.formats.thumbnail){
+        if(i.heroImage && i.heroImage.formats && i.heroImage.formats.thumbnail){
           heroImage = i.heroImage.formats.thumbnail.url;
         }
   
-        if(i.heroImage.formats.small){
+        if(i.heroImage && i.heroImage.formats && i.heroImage.formats.small){
           heroImage = i.heroImage.formats.small.url;
         }
   
