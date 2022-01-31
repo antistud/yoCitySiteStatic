@@ -3,8 +3,8 @@
     "static/js/0.30f49413.chunk.js": "/static/js/0.30f49413.chunk.js",
     "static/js/0.30f49413.chunk.js.map": "/static/js/0.30f49413.chunk.js.map",
     "main.css": "/static/css/main.7a0c7f9f.chunk.css",
-    "main.js": "/static/js/main.9f2a1254.chunk.js",
-    "main.js.map": "/static/js/main.9f2a1254.chunk.js.map",
+    "main.js": "/static/js/main.219fd24b.chunk.js",
+    "main.js.map": "/static/js/main.219fd24b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8145e21c.js",
     "runtime-main.js.map": "/static/js/runtime-main.8145e21c.js.map",
     "static/css/3.90935b8e.chunk.css": "/static/css/3.90935b8e.chunk.css",
@@ -44,6 +44,7 @@
     "static/js/6.b06a6c91.chunk.js.LICENSE.txt": "/static/js/6.b06a6c91.chunk.js.LICENSE.txt",
     "static/js/9.4861225a.chunk.js.LICENSE.txt": "/static/js/9.4861225a.chunk.js.LICENSE.txt",
     "static/media/actions.0d74941a.png": "/static/media/actions.0d74941a.png",
+    "static/media/beeso.f305a89c.png": "/static/media/beeso.f305a89c.png",
     "static/media/city.8690ea55.png": "/static/media/city.8690ea55.png",
     "static/media/phone_checkbox.f2872cff.png": "/static/media/phone_checkbox.f2872cff.png",
     "static/media/touch.bb52d481.png": "/static/media/touch.bb52d481.png",
@@ -54,6 +55,6 @@
     "static/css/3.90935b8e.chunk.css",
     "static/js/3.a8792468.chunk.js",
     "static/css/main.7a0c7f9f.chunk.css",
-    "static/js/main.9f2a1254.chunk.js"
+    "static/js/main.219fd24b.chunk.js"
   ]
 }
